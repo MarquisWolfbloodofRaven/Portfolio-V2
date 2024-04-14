@@ -9,10 +9,10 @@
     font-family: "Poppins", sans-serif;
 }
 :root{
-    --bg-color:#080808;
+    --bg-color:#ffffff;
     --second-bg-color:#131313;
-    --text-color: white;
-    --main-color:#00ffee;
+    --text-color: rgb(0, 0, 0);
+    --main-color:#24a0ed;
 
 
 }
@@ -23,8 +23,8 @@ html{
 }
 
 body{
-    background: white;      /*var(--bg-color)*/
-    color: black;  /*var(--text-color)*/
+    background: var(--bg-color);
+    color: var(--text-color);
 }
 
 .header{
@@ -147,7 +147,7 @@ span{
 
 .home-content p{
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 800; 
     line-height: 1.8;
     max-width: 1000px;
 
@@ -234,7 +234,7 @@ span{
 
 .text-animation span::after{
     content: "";
-    background-color: white;  /*var(--bg-color) */
+    background-color: var(--bg-color);
     position: absolute;
     width: calc(100% + 8px);
     height: 100%;
@@ -305,7 +305,7 @@ span{
 
 .education{
     padding: 100px 15px;
-    background: var(--second-bg-color);
+    background: rgb(204, 204, 204);
 
 }
 
@@ -370,7 +370,7 @@ span{
 }
 
 .timeline-content{
-    background-color: var(--bg-color);
+    background-color: rgb(202, 202, 202);
     border: 3px solid var(--main-color);
     padding: 30px 50px;
     border-radius: 4rem;
@@ -387,7 +387,7 @@ span{
 
 .timeline-content h3{
     font-size: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
     margin: 0 0 10px;
     font-weight: 500;
 }
