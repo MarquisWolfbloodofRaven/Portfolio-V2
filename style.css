@@ -474,12 +474,17 @@ span{
     margin: auto;
 }
 
+
+
 .projects{
-    padding: 50px;
+    padding: 100px;
     background-color: rgb(204, 204, 204);
     color: black;
 }
-
+.projects .projects-container{
+    display: flex;
+    justify-content: center;
+}
 
 
 
@@ -765,8 +770,8 @@ span{
     .gallery {
         display: flex;
         overflow-x: auto;
-        padding: 20px;
-        gap: 20px;
+        padding: 30px;
+        gap: 40px;
         perspective: 1000px;
         cursor: grab;
     }
@@ -793,3 +798,5 @@ span{
     .gallery-item:hover {
         transform: rotateY(0deg) scale(1.05);
     }
+
+  
