@@ -29,7 +29,7 @@ menuIcon.onclick = () => {
 */
 
 
-let menuIcon = document.querySelector('#menu-icon'); // Supondo que o id do ícone seja 'menu-icon'
+let menuIcon = document.querySelector('#menu-icon'); 
 let navbar = document.querySelector('.navbar');
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
