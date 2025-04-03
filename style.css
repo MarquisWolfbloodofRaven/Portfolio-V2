@@ -548,14 +548,30 @@ body.dark-mode .btn {
     color: var(--bg-color); /* Texto claro */
     background: var(--main-color); /* Fundo azul */
     border: 2px solid var(--main-color);
-}
-
-body.dark-mode .btn:hover {
-    color: var(--main-color); /* Texto azul no hover */
-    background: var(--bg-color); /* Fundo claro no hover */
     box-shadow: 0 0 25px var(--main-color);
 }
 
+/* Ajustar hover dos botões no modo escuro */
+body.dark-mode .btn:hover {
+    color: var(--main-color); /* Texto azul no hover */
+    background: var(--bg-color); /* Fundo claro no hover */
+    box-shadow: 0 0 50px var(--main-color);
+}
+
+/* Ajustar botão "Contact" no modo escuro */
+body.dark-mode .btn-group a:nth-of-type(2) {
+    background-color: var(--main-color); /* Fundo azul */
+    color: var(--bg-color); /* Texto claro */
+    border: 2px solid var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+/* Hover para o botão "Contact" no modo escuro */
+body.dark-mode .btn-group a:nth-of-type(2):hover {
+    background-color: var(--bg-color); /* Fundo claro */
+    color: var(--main-color); /* Texto azul */
+    box-shadow: 0 0 50px var(--main-color);
+}
 
 
 
