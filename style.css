@@ -545,7 +545,7 @@ body.dark-mode .footer ul li a:hover {
 
 /* Ajustar botões no modo escuro */
 body.dark-mode .btn {
-    color: var(--bg-color); /* Texto claro */
+    color: var(black); /* Texto claro */
     background: var(--main-color); /* Fundo azul */
     border: 2px solid var(--main-color);
 }
