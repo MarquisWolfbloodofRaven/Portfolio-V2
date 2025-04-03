@@ -487,9 +487,72 @@ span{
 }
 
 
+.theme-toggle {
+    position: fixed;
+    top: 25px;
+    right: 20px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px var(--main-color);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
 
 
+/* dark button */
+/* Modo escuro */
+body.dark-mode {
+    --bg-color: #131313;
+    --second-bg-color: #e4d6d6;
+    --text-color: #24a0ed; /* Cor branca para o texto */
+    --main-color: #24a0ed; /* Azul para elementos destacados */
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
 
+/* Ajustar textos específicos no modo escuro */
+body.dark-mode .header .logo,
+body.dark-mode .navbar a,
+body.dark-mode .home-content h1,
+body.dark-mode .home-content h3,
+body.dark-mode .home-content p,
+body.dark-mode .services h2,
+body.dark-mode .service-info h4,
+body.dark-mode .service-info p,
+body.dark-mode .projects,
+body.dark-mode .certificates,
+body.dark-mode .footer p,
+body.dark-mode .footer ul li a {
+    color: var(--text-color); /* Branco para textos */
+}
+
+/* Ajustar links e elementos destacados no modo escuro */
+body.dark-mode .navbar a:hover,
+body.dark-mode .navbar a.active,
+body.dark-mode .footer ul li a:hover {
+    color: var(--main-color); /* Azul para links destacados */
+    border-bottom: 3px solid var(--main-color);
+}
+
+/* Ajustar botões no modo escuro */
+body.dark-mode .btn {
+    color: var(--text-color);
+    background: var(--main-color);
+}
+
+body.dark-mode .btn:hover {
+    color: var(--bg-color);
+    background: var(--text-color);
+}
 
 
 
