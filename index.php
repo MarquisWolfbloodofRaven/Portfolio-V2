@@ -1,3 +1,40 @@
+<?php
+// index.php - header aplicado + cabeçalhos de segurança
+// ATENÇÃO: renomeie seu index.html para index.php e coloque este arquivo no servidor que roda PHP.
+
+// Cabeçalhos pretendidos / informativos
+header('Content-Type: text/html; charset=UTF-8');
+// Faz com que o nome do recurso sugerido seja "Otávio-Augusto-MargraveRaven.com.html"
+// - "inline" mantém no browser; "attachment" forçaria download
+header('Content-Disposition: inline; filename="Otávio-Augusto-MargraveRaven.com.html"');
+
+// Cabeçalhos de segurança recomendados
+header('X-Content-Type-Options: nosniff');
+header('X-Frame-Options: SAMEORIGIN'); // evita clickjacking
+header("Referrer-Policy: no-referrer-when-downgrade");
+header("Permissions-Policy: geolocation=(), camera=(), microphone=()");
+header("Strict-Transport-Security: max-age=63072000; includeSubDomains; preload");
+
+// Content Security Policy básico (ajuste conforme suas necessidades)
+// permite recursos do próprio site e de https (importante: não deixe 'unsafe-inline' sem necessidade)
+header("Content-Security-Policy: default-src 'self' https:; script-src 'self' https://unpkg.com; style-src 'self' https://unpkg.com 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self' https:;");
+
+// Opcional: informar um Server/Author customizado (não recomendado para fingir identidade de outro host)
+// header('Server: Otávio-Augusto-MargraveRaven.com');
+
+// Se você estiver usando redirecionamentos dinâmicos, sempre utilize whitelist (exemplo abaixo)
+// function safe_redirect($to) {
+//     $allowed = ['https://seusite.com', 'https://outro.seudominio.com'];
+//     if (in_array($to, $allowed, true)) {
+//         header('Location: ' . $to);
+//         exit;
+//     }
+//     // fallback seguro
+//     header('Location: /');
+//     exit;
+// }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
