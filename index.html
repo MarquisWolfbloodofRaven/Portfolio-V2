@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,15 +7,17 @@
     <link rel="shortcut icon" href="favicon.ico">
     <title>Portfolio_Otávio_Augusto</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
         <a href="#home" class="logo">Otávio<span>Augusto</span></a>
         <button id="theme-toggle" class="theme-toggle">🌙</button>
+        <!-- Botão de som -->
+        <button id="muteBtn" onclick="toggleMute()" title="Ativar/Desativar som" class="sound-toggle">
+          <i id="muteIcon" class="fas fa-volume-up"></i>
+        </button>
         <i class='bx bx-menu' id="menu-icon"></i>
-        
-
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#education">Education</a>
@@ -52,39 +53,30 @@
             </div> 
     </section>
 
-
     <section class="education" id="education">
         <h2 class="heading">Education</h2>
-
         <div class="timeline-items">
-
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
-                    <div class="timeline-date">2024</div>
-                    <div class="timeline-content">
-                        <h3>Technological Higher Education on Forensic and Criminal Investigation</h3>
-                        <p>Anhanguera University</p>
-                    </div>
-                
+                <div class="timeline-date">2024</div>
+                <div class="timeline-content">
+                    <h3>Technological Higher Education on Forensic and Criminal Investigation</h3>
+                    <p>Anhanguera University</p>
+                </div>
             </div>
-
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
-                    <div class="timeline-date">2025</div>
-                    <div class="timeline-content">
-                        <h3>Actually pursuing a Bachelor’s degree in Software Engineering</h3>
-                        <p>Anhanguera University</p>
-                    </div>
-                
+                <div class="timeline-date">2025</div>
+                <div class="timeline-content">
+                    <h3>Actually pursuing a Bachelor’s degree in Software Engineering</h3>
+                    <p>Anhanguera University</p>
+                </div>
             </div>
-
-            
         </div>
     </section>
     
     <section class="services" id="services">
         <h2 class="heading">Services</h2>
-
         <div class="services-container">
             <div class="service-box">
                 <div class="service-info">
@@ -96,7 +88,6 @@
                     </p>
                 </div>
             </div>
-
             <div class="service-box">
                 <div class="service-info">
                     <h4>Full-Stack Development</h4>
@@ -107,7 +98,6 @@
                     </p>
                 </div>
             </div>
-
             <div class="service-box">
                 <div class="service-info">
                     <h4>Game Development</h4>
@@ -117,7 +107,6 @@
                     </p>
                 </div>
             </div>
-
             <div class="service-box">
                 <div class="service-info">
                     <h4>Data Recovery</h4>
@@ -126,7 +115,6 @@
                     </p>
                 </div>
             </div>
-
             <div class="service-box">
                 <div class="service-info">
                     <h4>Project Management</h4>
@@ -138,7 +126,6 @@
                     </p>
                 </div>
             </div>
-
             <div class="service-box">
                 <div class="service-info">
                     <h4>Software Maintenance And Reformulation</h4>
@@ -150,15 +137,11 @@
                     </p>
                 </div>
             </div>
-
         </div>
     </section>
 
-
     <section class="projects" id="projects">
         <h2 class="heading">Projects</h2>
-        
-        
         <div class="projects-container">
             <div class="gallery">
                 <div class="gallery-item" data-url="https://interface-bancaria.vercel.app">
@@ -194,95 +177,54 @@
                 <div class="gallery-item" data-url="https://cheery-crostata-18052e.netlify.app/">
                     <img src="imagens/Furacoes.png" alt="Projeto 10">
                 </div>
+            </div>
         </div>
     </section>
-
 
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
         <div class="contact-icons">
-            <a href="mailto:marquis1118@gmail.com" target="_blank"><img src="imagens/Gmail_icon_(2020).svg.png" alt="gmaillogo"></i></a>
-            
+            <a href="mailto:marquis1118@gmail.com" target="_blank"><img src="imagens/Gmail_icon_(2020).svg.png" alt="gmaillogo"></a>
             <a href="https://wa.me/5534991462934?text=Olá! Gostaria de mais informações sobre seu trabalho!" target="_blank"><img src="imagens/WhatsApp.svg.webp" alt="whatsapplogo"></a>
-
             <a href="https://www.linkedin.com/in/otávio-augusto-b08242273" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
-                
             <a href="https://github.com/MarquisWolfbloodofRaven" target="_blank"><i class='bx bxl-github'></i></a>
-
         </div>
-        
-
     </section>
 
     <section class="certificates" id="certificates">
         <h2 class="heading">Certificates & Technologies</h2>
-        
-
         <div class="btn-group-tecnologies">
-            <a href="certificatesPageSql 2.html"><img src="imagens/sql-database-generic-icon-1521x2048-d0vdpxpg.png" alt="sql"></i></a>
-            
+            <a href="certificatesPageSql 2.html"><img src="imagens/sql-database-generic-icon-1521x2048-d0vdpxpg.png" alt="sql"></a>
             <a href="https://github.com/MarquisWolfbloodofRaven"><img src="imagens/dart-logo-for-shares.png" alt="dartlogo"></a>
-
-            <a href="www.linkedin.com/in/otávio-augusto-b08242273"><img src="imagens/gamemaker.png" alt="GMLlogo"></i></a>
-            
+            <a href="https://www.linkedin.com/in/otávio-augusto-b08242273"><img src="imagens/gamemaker.png" alt="GMLlogo"></a>
             <a href="certificatesPagesPython.html"><img src="imagens/Python-logo-notext.svg.png" alt="pyhtonlogo"></a>
-            
-            <a href="certificatesPagesCsharp.html"><img src="imagens/1673639331003.png" alt="C#logo"></i></a>
-            
+            <a href="certificatesPagesCsharp.html"><img src="imagens/1673639331003.png" alt="C#logo"></a>
             <a href="https://github.com/MarquisWolfbloodofRaven"><img src="imagens/unity-logo-988A22E703-seeklogo.com.png" alt="unitylogo"></a>
-            
-            <a href="www.linkedin.com/in/otávio-augusto-b08242273"><img src="imagens/Angular_full_color_logo.svg.png" alt="angularlogo"></i></a>
-            
+            <a href="https://www.linkedin.com/in/otávio-augusto-b08242273"><img src="imagens/Angular_full_color_logo.svg.png" alt="angularlogo"></a>
             <a href="https://github.com/MarquisWolfbloodofRaven"><img src="imagens/React_Logo_SVG.svg.png" alt="Reactlogo"></a>
-
-            <a href="www.linkedin.com/in/otávio-augusto-b08242273"><img src="imagens/1_5-aoK8IBmXve5whBQM90GA.png" alt="FlutterLogo"></i></a>
-            
+            <a href="https://www.linkedin.com/in/otávio-augusto-b08242273"><img src="imagens/1_5-aoK8IBmXve5whBQM90GA.png" alt="FlutterLogo"></a>
             <a href="https://github.com/MarquisWolfbloodofRaven"><img src="imagens/c26459544f6e7c4f.png" alt="Djangologo"></a>
-
-            <a href="www.linkedin.com/in/otávio-augusto-b08242273"><img src="imagens/UXdbeJYq.png" alt="Electronlogo"></i></a>
-            
+            <a href="https://www.linkedin.com/in/otávio-augusto-b08242273"><img src="imagens/UXdbeJYq.png" alt="Electronlogo"></a>
             <a href="https://github.com/MarquisWolfbloodofRaven"><img src="imagens/node-js-interview-questions-logo-2-266x300.avif" alt="Nodejslogo"></a>
-
             <a href="https://github.com/MarquisWolfbloodofRaven"><img src="imagens/aws-logo.png" alt="awslogo"></a>
-
-            <a href="www.linkedin.com/in/otávio-augusto-b08242273"><img src="imagens/javascript-36f5949a45.png" alt="JavaScriptlogo"></i></a>
-            
+            <a href="https://www.linkedin.com/in/otávio-augusto-b08242273"><img src="imagens/javascript-36f5949a45.png" alt="JavaScriptlogo"></a>
             <a href="certificatesPagesUml.html"><img src="imagens/qIYBAFc9CryAZRySAAAq0NpcKbE839.webp" alt="umllogo"></a>
-            
-            <a href="certificatesPagesUp.html"><img src="imagens/360_F_368223631_DcRx8teBPNpir3V3uGgerKCnShu2KLGO.jpg" alt="Uplogo"></i></a>
-            
+            <a href="certificatesPagesUp.html"><img src="imagens/360_F_368223631_DcRx8teBPNpir3V3uGgerKCnShu2KLGO.jpg" alt="Uplogo"></a>
             <a href="certificatesPagesScrum.html"><img src="imagens/0_KpzqUReoWU_DEwb5.png" alt="Scrumlogo"></a>
-            
-            <a href="www.linkedin.com/in/otávio-augusto-b08242273"><img src="imagens/108df64d-c341-461d-a9b4-b5065b45a7d1.png" alt="autopsylogo"></i></a>
-            
+            <a href="https://www.linkedin.com/in/otávio-augusto-b08242273"><img src="imagens/108df64d-c341-461d-a9b4-b5065b45a7d1.png" alt="autopsylogo"></a>
             <a href="https://github.com/MarquisWolfbloodofRaven"><img src="imagens/Bootstrap_logo.svg.png" alt="bootstraplogo"></a>
-
-            <a href="www.linkedin.com/in/otávio-augusto-b08242273"><img src="imagens/image.png" alt="diskdrilllogo"></i></a>
-            
+            <a href="https://www.linkedin.com/in/otávio-augusto-b08242273"><img src="imagens/image.png" alt="diskdrilllogo"></a>
             <a href="certificatesPagesPHP.html"><img src="imagens/unnamed.png" alt="phplogo"></a>
-
-            <a href="www.linkedin.com/in/otávio-augusto-b08242273"><img src="imagens/590956.png" alt="Pandalogo"></i></a>
-            
+            <a href="https://www.linkedin.com/in/otávio-augusto-b08242273"><img src="imagens/590956.png" alt="Pandalogo"></a>
             <a href="https://github.com/MarquisWolfbloodofRaven"><img src="imagens/hugo1.png" alt="hugologo"></a>
-
-            <a href="www.linkedin.com/in/otávio-augusto-b08242273"><img src="imagens/docker-27.png" alt="Dockerlogo"></i></a>
-            
+            <a href="https://www.linkedin.com/in/otávio-augusto-b08242273"><img src="imagens/docker-27.png" alt="Dockerlogo"></a>
             <a href="certificatesPagesGIT.html"><img src="imagens/Git-logo.svg.png" alt="gitlogo"></a>
-
-            <a href="certificatesPagesPowerBI.html"><img src="imagens/PowerBiLogo.png" alt="PowerBiLogo"></i></a>
-            
+            <a href="certificatesPagesPowerBI.html"><img src="imagens/PowerBiLogo.png" alt="PowerBiLogo"></a>
             <a href="https://github.com/MarquisWolfbloodofRaven"><img src="imagens/wordpress_logo_icon_181263.webp" alt="WordpressLogo"></a>
-
-            <a href="certificatesPagesAI.html"><img src="imagens/ia_writer_dark_macos_bigsur_icon_189510.webp" alt="Ialogo"></i></a>
-
+            <a href="certificatesPagesAI.html"><img src="imagens/ia_writer_dark_macos_bigsur_icon_189510.webp" alt="Ialogo"></a>
             <a href="https://github.com/MarquisWolfbloodofRaven"><img src="imagens/htmlLogo.webp" alt="HtmlLogo"></a>
-
-            <a href="www.linkedin.com/in/otávio-augusto-b08242273"><img src="imagens/CSS3_logo.svg.png" alt="CssLogo"></i></a>
-
-            <a href="certificatesPagesJava.html"><img src="imagens/Java-Logo.png" alt="JavaLogo"></i></a>
-            
-            
-
+            <a href="https://www.linkedin.com/in/otávio-augusto-b08242273"><img src="imagens/CSS3_logo.svg.png" alt="CssLogo"></a>
+            <a href="certificatesPagesJava.html"><img src="imagens/Java-Logo.png" alt="JavaLogo"></a>
         </div>
     </section>
 
@@ -291,29 +233,72 @@
             <a href="https://www.linkedin.com/in/otávio-augusto-b08242273" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
             <a href="https://github.com/MarquisWolfbloodofRaven" target="_blank"><i class='bx bxl-github'></i></a>
         </div>
-
         <ul class="list">
-            <li>
-                <a href="#contact">Contact Me</a>
-            </li>
-
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-
-            <li>
-                <a href="#services">Services</a>
-            </li>
-
-            <li>
-                <a href="#home">About Me</a>
-            </li>
+            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#home">About Me</a></li>
         </ul>
-
-        <p class="copyright">
-            ₢ Otávio Pena | All Rights Reserved
-        </p>
+        <p class="copyright">₢ Otávio Pena | All Rights Reserved</p>
     </footer>
+
     <script src="script.js"></script>
+
+    <audio id="bgMusic" loop preload="auto">
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        const AUDIO_MUTED_KEY = 'portfolio_audio_muted';
+    
+        function isMuted() {
+            return localStorage.getItem(AUDIO_MUTED_KEY) === '1';
+        }
+    
+        function setMuted(val) {
+            localStorage.setItem(AUDIO_MUTED_KEY, val ? '1' : '0');
+            updateMuteIcon();
+            updateBackgroundMusic();
+        }
+    
+        function toggleMute() {
+            setMuted(!isMuted());
+        }
+    
+        function updateMuteIcon() {
+            const icon = document.getElementById('muteIcon');
+            if (!icon) return;
+            if (isMuted()) {
+                icon.className = 'fas fa-volume-mute';
+            } else {
+                icon.className = 'fas fa-volume-up';
+            }
+        }
+    
+        function updateBackgroundMusic() {
+            const audio = document.getElementById('bgMusic');
+            if (!audio) return;
+            if (isMuted()) {
+                audio.pause();
+            } else {
+                audio.play().catch(() => {}); // browsers pedem gesto de usuário
+            }
+        }
+    
+        // Inicializa ícone e áudio quando a página carrega
+        document.addEventListener('DOMContentLoaded', () => {
+            updateMuteIcon();
+            updateBackgroundMusic();
+    
+            // Ativa o áudio só após interação do usuário
+            ['click','touchstart','keydown'].forEach(evt => {
+                window.addEventListener(evt, function _initAudioOnce() {
+                    const audio = document.getElementById('bgMusic');
+                    if (audio && !isMuted()) audio.play().catch(() => {});
+                    window.removeEventListener(evt, _initAudioOnce);
+                }, { once: true });
+            });
+        });
+    </script>
 </body>
 </html>
