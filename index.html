@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,17 +8,12 @@
     <link rel="shortcut icon" href="favicon.ico">
     <title>Portfolio_Otávio_Augusto</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     
 </head>
 <body>
     <header class="header">
         <a href="#home" class="logo">Otávio<span>Augusto</span></a>
         <button id="theme-toggle" class="theme-toggle">🌙</button>
-         <!-- Botão de som -->
-        <button id="muteBtn" onclick="toggleMute()" title="Ativar/Desativar som" class="theme-toggle">
-          <i id="muteIcon" class="fas fa-volume-up"></i>
-        </button>
         <i class='bx bx-menu' id="menu-icon"></i>
         
 
@@ -319,60 +315,5 @@
         </p>
     </footer>
     <script src="script.js"></script>
-        <audio id="bgMusic" loop>
-          <source src="music.mp3" type="audio/mpeg">
-        </audio>
-        <script>
-      const AUDIO_MUTED_KEY = 'portfolio_audio_muted';
-    
-      function isMuted() {
-        return localStorage.getItem(AUDIO_MUTED_KEY) === '1';
-      }
-    
-      function setMuted(val) {
-        localStorage.setItem(AUDIO_MUTED_KEY, val ? '1' : '0');
-        updateMuteIcon();
-        updateBackgroundMusic();
-      }
-    
-      function toggleMute() {
-        setMuted(!isMuted());
-      }
-    
-      function updateMuteIcon() {
-        const icon = document.getElementById('muteIcon');
-        if (!icon) return;
-        if (isMuted()) {
-          icon.className = 'fas fa-volume-mute';
-        } else {
-          icon.className = 'fas fa-volume-up';
-        }
-      }
-    
-      function updateBackgroundMusic() {
-        const audio = document.getElementById('bgMusic');
-        if (!audio) return;
-        if (isMuted()) {
-          audio.pause();
-        } else {
-          audio.play().catch(() => {}); // browsers pedem gesto de usuário
-        }
-      }
-    
-      // Inicializa ícone e áudio quando a página carrega
-      document.addEventListener('DOMContentLoaded', () => {
-        updateMuteIcon();
-        updateBackgroundMusic();
-    
-        // Ativa o áudio só após interação do usuário
-        ['click','touchstart','keydown'].forEach(evt => {
-          window.addEventListener(evt, function _initAudioOnce() {
-            const audio = document.getElementById('bgMusic');
-            if (audio && !isMuted()) audio.play().catch(() => {});
-            window.removeEventListener(evt, _initAudioOnce);
-          }, { once: true });
-        });
-      });
-    </script>
 </body>
 </html>
