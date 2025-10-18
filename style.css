@@ -872,3 +872,32 @@ body.dark-mode .btn-group a:nth-of-type(2):hover {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+.home-content h1,
+.home-content h3,
+.home-content p,
+.social-icons,
+.btn-group {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.home-content h1.animate,
+.home-content h3.animate,
+.home-content p.animate,
+.social-icons.animate,
+.btn-group.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.home-img img {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 1s ease-out;
+}
+
+.home-img img.animate {
+    opacity: 1;
+    transform: scale(1);
+}
