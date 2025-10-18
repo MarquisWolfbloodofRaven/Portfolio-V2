@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const navbar = document.querySelector('.navbar');
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('header nav a');
-
+    
     // Scroll para active nav (corrigido: remove all first, then add)
     window.onscroll = () => {
         let top = window.scrollY;
@@ -94,4 +94,9 @@ document.addEventListener('DOMContentLoaded', function() {
             localStorage.setItem('theme', isDarkMode ? 'dark-mode' : 'light-mode');
         });
     }
+     const homeElements = document.querySelectorAll('.home-content > *, .social-icons, .btn-group, .home-img img');
+    homeElements.forEach((el, index) => {
+        el.style.transitionDelay = `${index * 0.2}s`;
+        setTimeout(() => el.classList.add('animate'), index * 200);
+    });
 });
